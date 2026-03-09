@@ -9,7 +9,7 @@
 This project contains the source code of Minecraft Legacy Console Edition v1.6.0560.0 (TU19) with some fixes and improvements applied.
 
 ## Download
-Windows users can download our [Nightly Build](https://github.com/smartcmd/MinecraftConsoles/releases/tag/nightly)! Simply download the `.zip` file and extract it to a folder where you'd like to keep the game. You can set your username in `username.txt` (you'll have to make this file) and add servers to connect to in `servers.txt`
+Windows users can download our [Nightly Build](https://github.com/smartcmd/MinecraftConsoles/releases/tag/nightly)! Simply download the `.zip` file and extract it to a folder where you'd like to keep the game. You can set your username in `username.txt` (you'll have to make this file) and add servers to connect to in `servers.db`
 
 ## Platform Support
 
@@ -25,7 +25,7 @@ Windows users can download our [Nightly Build](https://github.com/smartcmd/Minec
 - Added a high-resolution timer path on Windows for smoother high-FPS gameplay timing
 - Device's screen resolution will be used as the game resolution instead of using a fixed resolution (1920x1080)
 - LAN Multiplayer & Discovery
-- Added persistent username system via "username.txt"
+- Added persistent username system via "username"
 
 ## Multiplayer
 
@@ -35,21 +35,21 @@ Basic LAN multiplayer is available on the Windows build
 - Other players on the same LAN can discover the session from the in-game Join Game menu
 - Game connections use TCP port `25565` by default
 - LAN discovery uses UDP port `25566`
-- Add servers to your server list with `servers.txt` (temp solution)
+- Add servers to your server list with `servers.db` (temp solution)
 - Rename yourself without losing data by keeping your `uid.dat`
 
 Parts of this feature are based on code from [LCEMP](https://github.com/LCEMP/LCEMP) (thanks!)
 
-### servers.txt
+### servers.db
 
-To add a server to your game, create the `servers.txt` file in the same directory as you have `Minecraft.Client.exe`. Inside, follow this format:
+To add a server to your game, create the `servers.db` file in the same directory as you have `Minecraft.Client.exe`. Inside, follow this format:
 ```
 serverip.example.com
 25565
 The name of your server in UI!
 ```
 
-For example, here's a valid servers.txt
+For example, here's a valid servers.db
 ```
 1.1.1.1
 25565
